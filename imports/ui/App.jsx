@@ -83,6 +83,8 @@ export default class App extends Component {
       </item>
     ));
   }
+ 
+  //for the 'menu_header' image I used a version of the background image (which is tiled) that faded to transparency vertically
   render() {
     return (
       <div className="projectShowCase">
