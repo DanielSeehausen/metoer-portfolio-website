@@ -4,6 +4,7 @@ import ReactTooltip from 'react-tooltip';
 // Project description component - represents a single project description
 export default class ProjectDescription extends Component {
   
+  //this renders the language icons that you see below the title of projects at chouxbe.us
   renderIconList() {
     icons = this.props.projectDescription.icons;
     return icons.map((icon) => (
@@ -19,6 +20,7 @@ export default class ProjectDescription extends Component {
     ));
   }
 
+  //an example of this on Chouxbe.us can be seen in the 'Unity' project. The links are the two download images
   renderLinks() {
     links = this.props.projectDescription.links;
     if (links.length < 1) { return };
@@ -57,26 +59,20 @@ export default class ProjectDescription extends Component {
   render() {
     return (
       <div className="projDescription" id={ this.props.projectDescription.projId }>
-        
         <img className="activeProjImage" src={ this.props.projectDescription.backgroundImg } />
-
         <div className="projTitleContainer">
           <h>{ this.props.projectDescription.title }</h>
-
           <div className="languageIcons">
             <ul className="languageIconsList">
               {this.renderIconList()}
             </ul>
           </div>
         </div>
-        
-
         <div className="projInfoContainer">
           <div className="projInfo">
             { this.getProjDescription() }
           </div>
         </div>
-  
         <div className="pDLinksContainer">
           <div className="pDLinks">
             <span>{ this.props.projectDescription.linksText }</span>
@@ -85,7 +81,6 @@ export default class ProjectDescription extends Component {
             </ul>
           </div>
         </div>
-        
       </div>
       
     );
