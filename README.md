@@ -22,6 +22,8 @@ The structure of the code and the application is as follows:
   
   imports/ui/ProjectLink.jsx -- These links are displayed on the left hand side of the screen at chouxbe.us and each has a respective project description. Important note: all project description opacity is controlled via its projectLink and all descriptions should start with opacity=0 in the style sheet. the ProjectLink class will then do the rest when handling opacity changes. 
   
+  All assets/images should exist in the main meteor application's 'public' folder! (not included here, but it will be included upon the creation of a meteor project)
+  
 Important note:
 
   All image assets from the original chouxbe.us are not included in this project with the exception of several programming language icons. These icons were all originally made by Ben Hawker: https://github.com/hwkr/BitIcon/. 
