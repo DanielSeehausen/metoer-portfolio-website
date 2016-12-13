@@ -28,4 +28,4 @@ Important note:
 
   All image assets from the original chouxbe.us are not included in this project with the exception of several programming language icons. These icons were all originally made by Ben Hawker: https://github.com/hwkr/BitIcon/. 
   
-Todo: continue adding better documentation. 
+
