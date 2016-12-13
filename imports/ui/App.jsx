@@ -63,11 +63,12 @@ export default class App extends Component {
     ));    
   }    
 
+  //make sure to full your public/images folder with appropriate images for these links!
   getbottomNavBar() {
     return [
-      { _id: 1, img: "images/GitHub_Logo.png", link: "https://github.com/DanielSeehausen" },
-      { _id: 2, img: "images/HackerRank_logo.png", link: "https://www.hackerrank.com/Dseehausen" },
-      { _id: 3, img: "images/LinkedIn_logo_initials.png", link: "https://www.linkedin.com/in/danielseehausen" },
+      { _id: 1, img: "images/GitHub_Logo.png", link: "https://github.com" },
+      { _id: 2, img: "images/HackerRank_logo.png", link: "https://www.hackerrank.com" },
+      { _id: 3, img: "images/LinkedIn_logo_initials.png", link: "https://www.linkedin.com" },
     ];
   }
 
@@ -82,32 +83,26 @@ export default class App extends Component {
       </item>
     ));
   }
-  
   render() {
     return (
       <div className="projectShowCase">
         { this.renderHomeDisplay() }
         { this.renderProjectDescriptions() }
-        
         <div id="navBar">
           <div id="navBarTop">
             <h1>Sample Projects</h1>
             <img src="images/menu_header.png"/>
           </div>
-
           <div id="projectListBorder"></div>
-          
           <ul id="projectList">
             {this.renderProjectLinks()}
           </ul>
         </div>
-
         <div id="bottomNavBar">
           <ul>
             {this.renderbottomNavBar()}
           </ul>
         </div>
-
       </div>
     );
   }
