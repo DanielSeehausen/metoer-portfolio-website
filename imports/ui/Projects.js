@@ -5,10 +5,6 @@
  * our 'projects' in getProjectDescriptions should hold all of the information
  * for a specific projects big display. The getProjectLinks should hold the information for the navbar
  * and match up with their relative getProjectDescriptions index.
- * TODO: merge projectLinks and projectDescriptions because one should not exist without the other.
- * 
- * IMPORTANT: the projectDescription's 'projInfo' field should contain ROUGHLY 1200 characters (maybe less) @12pt
- *            to maintain proper visuals when resizing 
 */
 
 var cSharp =     { _id: 10, img: "images/language_images/png/csharp-sq.png", tooltip: "C#!"};
@@ -23,6 +19,7 @@ var node =       { _id: 18, img: "images/language_images/png/node-sq.png",   too
 var cpp =        { _id: 19, img: "images/language_images/png/cpp-sq.png",    tooltip: "C++!"};
 
 
+//the following will need all of their data and links replaced!!! left in as examples
 export function getProjectLinks() {
     return [
       { _id: 1, projId: 'unityProj', text: 'Unity2D Game', img: "images/unity_icon_small_bw.png", activeImg: "images/unity_icon_small.png" },
@@ -31,6 +28,7 @@ export function getProjectLinks() {
     ];
   }
 
+//the following will need all of their data and links replaced! left in as examples
 export function getProjectDescriptions() {
     return [
       //unity project ----------------------------------------------------------
