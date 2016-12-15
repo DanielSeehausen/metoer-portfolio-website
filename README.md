@@ -1,8 +1,7 @@
 # metoer-portfolio-website
-This repository serves as the skeleton for anyone interested in making a personal website in the same layout as chouxbe.us.
-This is a Meteor project, and Meteor will be required to emulate the site's user interface and design. Note: this does not make use of mongo.db (Meteor's standard database). 
+This repository serves as the skeleton for anyone interested in making a Meteor application to showcase a portfolio or other similar UI experience. Meteor is required. 
 
-The repository itself is not a complete Meteor project. Within, you will find files that fit within the standard Meteor initial build scheme (install and 'create' a new Meteor project). These files do not address any back-end code. 
+The repository itself is not a complete Meteor project. Within, you will find files that fit within the standard Meteor initial build scheme ('meteor create' in a new repository). These files do not address any back-end code. 
 
 The structure of the code and the application is as follows:
   
@@ -20,9 +19,9 @@ The structure of the code and the application is as follows:
   
   imports/ui/ProjectDescription.jsx -- Project descriptions consume the largest part of the canvas (visually), and can be arranged in any manner you see fit. There are three important divs that are created within each project description (links, description, and icons). Each receives data from its respective 'project' within the Projects.js file.
   
-  imports/ui/ProjectLink.jsx -- These links are displayed on the left hand side of the screen at chouxbe.us and each has a respective project description. Important note: all project description opacity is controlled via its projectLink and all descriptions should start with opacity=0 in the style sheet. the ProjectLink class will then do the rest when handling opacity changes. 
+  imports/ui/ProjectLink.jsx -- These links can most easily be displayed in a scrolling navbar.
   
-  All assets/images should exist in the main meteor application's 'public' folder! (not included here, but it will be included upon the creation of a meteor project)
+  All assets/images should exist in the main meteor application's 'public' directory! (the public directory is not included here, but exists in all fresh creations of a Meteor project.)
   
 Important note:
 
