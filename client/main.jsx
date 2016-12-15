@@ -7,13 +7,14 @@ import App from '../imports/ui/App.jsx';
 Meteor.startup(() => {
   render(<App />, document.getElementById('render-target'));
   
-  //this allows the nice scrollbar functionality that we have on the left hand side of the page
+  /*
+   * This is useful if you want to disable horizontal scrolling
   $(window).scroll(function(){
     $('#projectList').css({
         'left': $(this).scrollLeft()
     });
   });
-
+  */
 });
 
 
